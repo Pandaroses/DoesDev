@@ -1,0 +1,42 @@
+html{
+    
+    background-image: url(images/cool-background.png);
+    color: #1c2122;
+    font-family:"Arial","sans-serif";
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+
+}
+body{
+    border: 1cm;
+}
+.hero-text-box {
+    position: absolute;
+    width: 1140;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+}   
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration:none;
+    border-radius: 200px;
+    color: #3b5258;
+    transition: background-color 0.2s,border 0.2s,color 0,2s;
+}
+.btn:hover,
+.btn:active{
+    background-color: #1b2730;
+
+
+}
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 5px solid #5bb4dd;
+    color: #ffffff;
+}
