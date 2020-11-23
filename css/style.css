@@ -54,6 +54,13 @@ body{
     height: 100px;
     width: auto;
     float: right;
-    margin-right: 125px;
-    margin-top: 100px;
+    margin-right: 6 0px;
+    margin-top: 60px;
+}
+.Dev-shit {
+    position: absolute;
+    left: 3%;
+    top: 5%;
+    text-shadow: #48cae4;
+    color: #1b6b80;
 }
