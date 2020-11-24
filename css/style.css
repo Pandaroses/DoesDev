@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}*/
+}
 html {
   background-image: url('./images/cool-background\ \(1\)\ \(1\).png');
   color: #48cae4;
@@ -58,9 +58,12 @@ body {
   color: #1b6b80;
 } */
 
-body {
+html, body {
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .wrapper {
@@ -151,4 +154,27 @@ body {
     border-radius: 50%;
     opacity: 0;
   }
+}
+
+h1{
+  margin: 0;
+}
+/* .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+.main{
+  height: 10em;
+  position: relative;
+}
+
+.main{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;               /* 2 */
+  top: 50%;                         /* 3 */
+  transform: translate(0, -50%)
 }
