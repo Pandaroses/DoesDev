@@ -1,11 +1,7 @@
-//Rewrite to www
-Options +FollowSymLinks
-RewriteEngine on
-RewriteCond %{HTTP_HOST} ^doesdev.me[nc]
-RewriteRule ^(.*)$ http://www.doesdev.me/$1 [r=301,nc]
-
-//Custom 404 errors
-ErrorDocument 404 ./404.html
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+ErrorDocument 404 /404.html
 
 //Prevent viewing of .htaccess file
 <Files .htaccess>
